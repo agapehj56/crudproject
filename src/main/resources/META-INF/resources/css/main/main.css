@@ -1,0 +1,113 @@
+.main > .container {
+	width: 550px;
+	height: 200px;
+	padding-top: 70px;
+	margin: 0 auto;
+	color:white;
+}
+
+.ball {
+	border-radius:10px;
+	text-align:center;
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 10px auto;
+	vertical-align:medium; 
+}
+
+p {
+	font-size:7em;
+	font-weight:900;
+	position: absolute;
+	top: -50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.ball:nth-child(1) {
+	background: #0085C7;
+	animation: right 1s infinite ease-in-out;
+}
+
+.ball:nth-child(2) {
+	background: #F4C300;
+	animation: left 1s infinite ease-in-out;
+}
+
+.ball:nth-child(3) {
+	background: #000000;
+	animation: right 1s infinite ease-in-out;
+}
+
+.ball:nth-child(4) {
+	background: #009F3D;
+	animation: left 1s infinite ease-in-out;
+}
+
+.ball:nth-child(5) {
+	background: #DF0024;
+	animation: right 1s infinite ease-in-out;
+}
+
+@keyframes right {
+	0% {
+		transform: translate(0,-20px);
+	}
+	50% {
+		transform: translate(0,20px);
+	}
+	100% {
+		transform: translate(0,-20px);
+	}
+}
+
+@keyframes left {
+	0% {
+		transform: translate(0,20px);
+	}
+	50% {
+		transform: translate(0,-20px);
+	}
+	100% {
+		transform: translate(0,20px);
+	}
+}
+
+body {
+	background-image: url("../../../img/w_str.png");
+}
+.bg {
+	padding: 50px 100px 0 100px;
+	margin :auto;
+	float: left;
+}
+
+.img {
+	width : 300px;
+	height: 280px;
+	border : 1px solid rgba(0,0,0,0.2);
+	margin : 25px;
+}
+
+.img:hover {
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+	opacity : 0.8;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #008CBA;
+}
+
+.container:hover .overlay {
+	opacity: 1;
+}
