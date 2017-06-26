@@ -20,7 +20,7 @@ p {
 	font-size:7em;
 	font-weight:900;
 	position: absolute;
-	top: -50%;
+	top: 62%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -77,9 +77,10 @@ p {
 body {
 	background-image: url("../../../img/w_str.png");
 }
+
 .bg {
-	padding: 50px 100px 0 100px;
-	margin :auto;
+	padding: 80px 75px 0 75px;
+	margin : 0px auto;
 	float: left;
 }
 
@@ -87,7 +88,7 @@ body {
 	width : 300px;
 	height: 280px;
 	border : 1px solid rgba(0,0,0,0.2);
-	margin : 25px;
+	margin : 13px;
 }
 
 .img:hover {
